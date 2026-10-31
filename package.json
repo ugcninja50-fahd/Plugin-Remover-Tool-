@@ -1,3 +1,4 @@
+
 {
   "name": "plugin-remover-tool",
   "version": "10.0.0",
@@ -7,7 +8,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "start": "electron .",
-    "dist": "electron-builder --win nsis portable"
+    "dist": "electron-builder --win nsis portable --publish never"
   },
   "devDependencies": {
     "electron": "^39.0.0",
@@ -28,15 +29,11 @@
       "target": [
         {
           "target": "nsis",
-          "arch": [
-            "x64"
-          ]
+          "arch": ["x64"]
         },
         {
           "target": "portable",
-          "arch": [
-            "x64"
-          ]
+          "arch": ["x64"]
         }
       ]
     },
